@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+input[type="file"] {
+  margin: 20px 0;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  margin: 10px auto;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin: 10px;
+}
+
+img {
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+}
