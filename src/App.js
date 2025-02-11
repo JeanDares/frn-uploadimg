@@ -29,7 +29,7 @@ const App = () => {
     formData.append('message', message);
 
     try {
-      const response = await axios.post('http://localhost:3000/upload', formData, {
+      const response = await axios.post('https://bkn-uploadimg.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -43,7 +43,7 @@ const App = () => {
 
   const handleFetchImage = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/images/${imageId}`, {
+      const response = await axios.get(`https://bkn-uploadimg.onrender.com/images/${imageId}`, {
         responseType: 'blob',
       });
       const imageUrl = URL.createObjectURL(response.data);
